@@ -1,0 +1,15 @@
+#include <stdio.h>
+void myfunction(int num1,int num2) 
+{
+    printf("Addition of number is:%d\n",num1 + num2);
+    printf("Subraction of number is:%d\n",num1 - num2);
+    printf("Multiplaction of number is:%d\n",num1 * num2);
+    printf("Modulus of number is:%d\n",num1 % num2);
+}
+int main() {
+    myfunction(6,3);
+    
+    myfunction(56,13);
+
+    return 0;
+}
