@@ -1,0 +1,115 @@
+#include <stdio.h>
+
+int main() {
+    int mynum = 8;
+    printf("%d\n", mynum);
+    printf("%p", mynum);
+
+    return 0;
+}
+
+o/p:
+8
+0x8
+
+
+
+#include <stdio.h>
+int main() {
+    int mynum = 8;
+    int *point = &mynum;
+    printf("%d \n", mynum);
+    printf("%p \n", &mynum);
+    printf("%p \n", point
+    return 0;
+}
+
+o/p:
+8 
+0x7ffdd3484f54 
+0x7ffdd3484f54 
+
+
+
+#include <stdio.h>
+int main() {
+    int mynum = 8;
+    int *point = &mynum;
+    printf("%d \n", mynum);
+    printf("%p \n", &mynum);
+    printf("%p \n", point);  
+    printf("%d", *point);
+    return 0;
+}
+
+o/p:
+
+8 
+0x7fff498cf484 
+0x7fff498cf484 
+8
+
+
+
+
+
+#include <stdio.h>
+#include<math.h>
+int main() {
+    float pa,fa,rp;
+    int years;
+    printf("Enter the principal amount :\n");
+    scanf("%f",&pa);
+    printf("Enter the rate power :\n");
+    scanf("%f",&rp);
+    printf("Enter the number of years:\n");
+    scanf("%d",&years);
+    fa = pa*pow((1+rp/100),years);
+    printf("The finial ampunt is %2.f",fa);
+    return 0;
+}
+
+o/p:
+Enter the principal amount :
+3000
+Enter the rate power :
+499
+Enter the number of years:
+8
+The finial ampunt is 4972052480
+
+=== Code Execution Successful ===
+
+
+#include<stdio.h>
+void swap(int *x,int *y){
+    int temp;
+    temp = *x;
+    *x = *y;
+    *y = temp;
+    }
+
+int main(){
+        int x=65,y=54;
+        printf("Before swapping\n");
+         printf("The value of x:%d\n",x);
+         printf("The value of y:%d\n",y);
+         
+         swap(&x,&y);
+         
+         printf("After swapping\n");
+         printf("The value of x:%d\n",x);
+         printf("The value of y:%d\n",y);
+         
+         return 0;
+}
+
+
+
+
+Before swapping
+The value of x:65
+The value of y:54
+After swapping
+The value of x:54
+The value of y:65
