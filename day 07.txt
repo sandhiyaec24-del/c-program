@@ -1,0 +1,162 @@
+#include <stdio.h>
+#include <string.h>
+struct structure {
+    int reg;
+    char name[9];
+    int marks;
+};
+int main(){
+    struct structure stru1;
+    stru1.reg=0001;
+    strcpy(stru1.name,"Arun");
+    stru1.marks=450;
+    printf("The Reg no is: %d\n",stru1.reg);
+    printf("The name is: %s\n",stru1.name);
+    printf("The mark is: %d\n",stru1.marks);
+    
+
+    return 0;
+}
+
+o/p:
+
+The Reg no is: 1
+The name is: Arun
+The mark is: 450
+
+
+=== Code Execution Successful ===
+
+
+#include <stdio.h>
+struct structure{
+    int reg;
+    char section;
+    float cgpa;
+};
+int main(){
+    struct structure stru1;
+    struct structure student2;
+    stru1.reg = 0001;
+    stru1.section = 'b';
+    stru1.cgpa = 8.9;
+    
+    student2.reg = 0002;
+    printf("The Reg no is: %d \n",stru1.reg);
+    printf("The section is: %c \n",stru1.section);
+    printf("The cgpa is: %f \n",stru1.cgpa);
+    printf("reg no of second student: %d \n",student2.reg);
+
+
+
+    return 0;
+}
+
+o/p:
+
+The Reg no is: 1 
+The section is: b 
+The cgpa is: 8.900000 
+reg no of second student: 2 
+
+
+=== Code Execution Successful ===
+
+
+#include<stdio.h>
+#include<string.h>
+struct structure {
+    int ID;
+    int salary;
+};
+struct structure stru1;
+struct structure stru2;
+struct structure stru3;
+
+int main(){
+stru1.ID=24013;
+stru1.salary=2000000;
+
+stru2.ID=24012;
+stru2.salary=2000;
+
+stru3.ID=24011;
+stru3.salary=3000;
+printf("The ID is: %d\n",stru1.ID);
+printf("The Salary is: %d\n",stru1.salary);
+printf("The ID is: %d\n",stru2.ID);
+printf("The Salary is: %d\n",stru2.salary);
+printf("The ID is: %d\n",stru3.ID);
+printf("The Salary is: %d\n",stru3.salary);
+
+return 0;
+}
+
+o/p:
+
+The ID is: 24013
+The Salary is: 2000000
+The ID is: 24012
+The Salary is: 2000
+The ID is: 24011
+The Salary is: 3000
+
+
+=== Code Execution Successful ===
+
+
+#include<stdio.h>
+#include<stdio.h>
+struct structure{
+int mobileno;
+int rechargeamount;
+};
+int main(){
+    struct structure stru1;
+    
+    stru1.mobileno=791710846;
+    stru1.rechargeamount=1000;
+    
+    printf("The mobile no is: %d\n",stru1.mobileno);
+    printf("The recharge amount is: %d\n",stru1.rechargeamount);
+    
+    return 0;
+}
+
+o/p:
+
+The mobile no is: 791710846
+The recharge amount is: 1000
+
+
+=== Code Execution Successful ===
+
+
+#include<stdio.h>
+struct student{
+    char name[20];
+    int regno;
+};
+int main(){
+    struct student std1 ={"Arun",1001}; //assigning data to pointer
+    struct student *point = &std1; //pointing structure to pointer variable
+    
+printf("My name is %s \n",point -> name);
+printf("My name's memory address is %p \n",point -> name);
+
+printf("My reg no is %d \n", point -> regno);
+printf("My regno's memory address is %p \n", point -> regno);
+return 0;
+}
+
+o/p:
+
+My name is Arun 
+My name's memory address is 0x7fffeca54eb0 
+My reg no is 1001 
+My regno's memory address is 0x3e9 
+
+
+=== Code Execution Successful ===
+
+
